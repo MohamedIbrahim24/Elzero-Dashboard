@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- Framework -->
+    <link rel="stylesheet" href="../css/framework.css" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page d-flex">
+      <div class="sidebar bg-white p-relative">
+        <h3 class="p-relative mt-0 txt-c">Elzero</h3>
+        <ul>
+          <li>
+            <a
+              class="p-10 fs-14 c-black rad-6 d-flex align-center"
+              href="../index.html"
+            >
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span class="hide-mobile">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="active p-10 fs-14 c-black rad-6 d-flex align-center"
+              href="settings.html"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span class="hide-mobile">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="p-10 fs-14 c-black rad-6 d-flex align-center"
+              href="profile.html"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span class="hide-mobile">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="p-10 fs-14 c-black rad-6 d-flex align-center"
+              href="projects.html"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="hide-mobile">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="p-10 fs-14 c-black rad-6 d-flex align-center"
+              href="courses.html"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="hide-mobile">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="p-10 fs-14 c-black rad-6 d-flex align-center"
+              href="friends.html"
+            >
+              <i class="fa-regular fa-user-circle fa-fw"></i>
+              <span class="hide-mobile">Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="p-10 fs-14 c-black rad-6 d-flex align-center"
+              href="files.html"
+            >
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span class="hide-mobile">Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="p-10 fs-14 c-black rad-6 d-flex align-center"
+              href="plans.html"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span class="hide-mobile">Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Start Content -->
+      <div class="content w-full">
+        <!-- Start Header -->
+        <div class="header bg-white p-15 flex-between">
+          <div class="search p-relative">
+            <input
+              class="rad-10 p-10"
+              type="search"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div class="icons d-flex align-center">
+            <span class="notification p-relative rad-half">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img src="../imgs/avatar.png" alt="" />
+          </div>
+        </div>
+        <!-- End Header -->
+        <!-- Start Boxes -->
+        <h1 class="main-heading p-relative">Settings</h1>
+        <div class="settings-page m-20 d-grid gap-20">
+          <!-- Start Settings box -->
+          <div class="bg-white p-20 rad-10">
+            <h2 class="mt-0 mb-10">Site Control</h2>
+            <p class="mt-0 mb-20 c-grey fs-15">
+              Control The Website If There Is Maintenance
+            </p>
+            <div class="flex-between mb-10">
+              <div>
+                <span>Website Control</span>
+                <p class="mt-5 mb-0 c-grey fs-13">
+                  Open/Close The Website And Type The Reason
+                </p>
+              </div>
+              <div>
+                <label>
+                  <input type="checkbox" class="toggle-checkbox" />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+            </div>
+            <textarea
+              class="w-full rad-6 d-block p-10"
+              placeholder="Close Message Content"
+            ></textarea>
+          </div>
+          <!-- End Settings box -->
+        </div>
+        <!-- End Boxes -->
+      </div>
+      <!-- End Content -->
+    </div>
+  </body>
+</html>
