@@ -848,8 +848,20 @@ textarea {
   -o-border-radius: 0 6px 6px 0;
 }
 
-.settings-page .social div:focus-within i {
-  color: black;
+.settings-page .social div:first-of-type:focus-within i {
+  color: #1da1f2;
+}
+
+.settings-page .social div:nth-of-type(2):focus-within i {
+  color: #1877f2;
+}
+
+.settings-page .social div:nth-of-type(3):focus-within i {
+  color: #0a66c2;
+}
+
+.settings-page .social div:last-of-type:focus-within i {
+  color: #f00;
 }
 
 /* End Settings Page */
