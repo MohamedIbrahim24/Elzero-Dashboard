@@ -723,6 +723,7 @@ ul {
 .toggle-checkbox {
   -webkit-appearance: none;
   appearance: none;
+  display: none;
 }
 
 .toggle-switch {
@@ -781,10 +782,74 @@ ul {
 
 /* End Toggle Switch */
 /* Start Settings Page */
+.settings-page {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+@media (max-width:767px) {
+  .settings-page {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
 textarea {
   border: 1px solid #ccc;
   resize: none;
   min-height: 150px;
+}
+
+.settings-page :disabled {
+  cursor: no-drop;
+  color: #bbb;
+  background-color: #f0f4f8;
+}
+
+.settings-page input[type="email"] {
+  display: inline-flex;
+  width: calc(100% - 80px);
+}
+
+.settings-page .sec-box {
+  padding-bottom: 15px;
+}
+
+.settings-page .sec-box:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.settings-page .social i,
+.settings-page .social input {
+  background-color: #f6f6f6;
+  height: 40px;
+  border: 1px solid #ddd;
+}
+
+.settings-page .social i {
+  width: 40px;
+  border-radius: 6px 0 0 6px;
+  -webkit-border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  -ms-border-radius: 6px 0 0 6px;
+  -o-border-radius: 6px 0 0 6px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.settings-page .social input {
+  padding-left: 10px;
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  -ms-border-radius: 0 6px 6px 0;
+  -o-border-radius: 0 6px 6px 0;
+}
+
+.settings-page .social div:focus-within i {
+  color: black;
 }
 
 /* End Settings Page */
