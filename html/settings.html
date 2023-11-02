@@ -266,19 +266,19 @@
             <h2 class="mt-0 mb-10">Widgets Control</h2>
             <p class="mt-0 mb-20 c-grey fs-15">Show/Hide Widgets</p>
             <div class="control mb-15 d-flex align-center">
-              <input type="checkbox" id="draft" />
+              <input type="checkbox" id="draft" checked />
               <label for="draft">Quick Draft</label>
             </div>
             <div class="control mb-15 d-flex align-center">
-              <input type="checkbox" id="targets" />
+              <input type="checkbox" id="targets" checked />
               <label for="targets">Yearly Targets</label>
             </div>
             <div class="control mb-15 d-flex align-center">
-              <input type="checkbox" id="tickets" />
+              <input type="checkbox" id="tickets" checked />
               <label for="tickets">Tickets Statistics</label>
             </div>
             <div class="control mb-15 d-flex align-center">
-              <input type="checkbox" id="news" />
+              <input type="checkbox" id="news" checked />
               <label for="news">Latest News</label>
             </div>
             <div class="control mb-15 d-flex align-center">
@@ -286,8 +286,28 @@
               <label for="tasks">Latest Tasks</label>
             </div>
             <div class="control mb-15 d-flex align-center">
-              <input type="checkbox" id="search" />
+              <input type="checkbox" id="search" checked />
               <label for="search">Top Search Items</label>
+            </div>
+          </div>
+          <!-- End Settings box -->
+          <!-- Start Settings box -->
+          <div class="backup bg-white rad-10 p-20">
+            <h2 class="mt-0 mb-10">Backup Manager</h2>
+            <p class="mt-0 mb-20 fs-15 c-grey">
+              Control Backup Time And Location
+            </p>
+            <div class="date mb-15 d-flex align-center">
+              <input type="radio" name="time" id="daily" checked />
+              <label for="daily">Daily</label>
+            </div>
+            <div class="date mb-15 d-flex align-center">
+              <input type="radio" name="time" id="weekly" />
+              <label for="weekly">Weekly</label>
+            </div>
+            <div class="date mb-15 d-flex align-center">
+              <input type="radio" name="time" id="monthly" />
+              <label for="monthly">Monthly</label>
             </div>
           </div>
           <!-- End Settings box -->
