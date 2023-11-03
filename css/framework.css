@@ -27,12 +27,28 @@
   padding: 20px;
 }
 
+.p-25 {
+  padding: 25px;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+
+.pt-10 {
+  padding-top: 15px;
+}
+
 .pt-15 {
   padding-top: 15px;
 }
 
 .pt-20 {
   padding-top: 20px;
+}
+
+.pl-10 {
+  padding-left: 10px;
 }
 
 .pl-15 {
@@ -51,20 +67,32 @@
   padding-bottom: 20px;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .m-0 {
   margin: 0;
 }
 
-.m-auto {
-  margin: auto;
+.m-5 {
+  margin: 5px;
 }
 
 .m-10 {
   margin: 10px;
 }
 
+.m-15 {
+  margin: 15px;
+}
+
 .m-20 {
   margin: 20px;
+}
+
+.m-25 {
+  margin: 25px;
 }
 
 .mt-0 {
@@ -113,6 +141,10 @@
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
 }
 
 /* End Padding + Margin */
