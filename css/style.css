@@ -1321,7 +1321,54 @@ textarea {
 }
 
 /* End Projects Page */
+/* Start Courses Page */
+.courses-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
 
+.courses-page .course {
+  overflow: hidden;
+}
+
+.courses-page .course .cover {
+  width: 100%;
+}
+
+.courses-page .course .instructor {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.courses-page .course .description > p {
+  line-height: 1.6;
+}
+
+.courses-page .course .info {
+  border-top: 1px solid #eee;
+}
+
+
+.courses-page .course .info .c-info {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+/* End Courses Page */
 
 /* Start Animation */
 @keyframes flashing {
