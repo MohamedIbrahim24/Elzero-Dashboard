@@ -1081,20 +1081,52 @@ textarea {
   background-color: var(--blue-color);
 }
 
-.profile-page .info {}
-
 .profile-page .info .box {
   flex-wrap: wrap;
+}
+
+.profile-page .info .box:not(:last-child) {
+  border-bottom: 1px solid #eee;
 }
 
 .profile-page .info .box h4 {
   font-weight: normal;
 }
 
+.profile-page .info .box > div {
+  padding: 10px 0 0;
+}
+
 @media (min-width: 768px) {
   .profile-page .info .box > div {
     min-width: 250px;
   }
+}
+
+.profile-page .info .box > div .toggle-switch {
+  height: 20px;
+}
+
+.profile-page .info .box > div .toggle-switch::before {
+  width: 12px;
+  height: 12px;
+  font-size: 8px;
+}
+
+.profile-page .info .box > div .toggle-checkbox:checked + .toggle-switch::before {
+  left: 62px;
+}
+
+.profile-page .skills ul li {
+  padding: 15px 0;
+}
+
+.profile-page .skills ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.profile-page .skills ul li span {
+  display: inline-flex;
 }
 
 /* End Profile Page */
