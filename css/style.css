@@ -1083,6 +1083,15 @@ textarea {
 
 .profile-page .info .box {
   flex-wrap: wrap;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.profile-page .info .box:hover {
+  background-color: #f9f9f9;
 }
 
 .profile-page .info .box:not(:last-child) {
@@ -1094,13 +1103,8 @@ textarea {
 }
 
 .profile-page .info .box > div {
+  min-width: 250px;
   padding: 10px 0 0;
-}
-
-@media (min-width: 768px) {
-  .profile-page .info .box > div {
-    min-width: 250px;
-  }
 }
 
 .profile-page .info .box > div .toggle-switch {
@@ -1117,6 +1121,20 @@ textarea {
   left: 62px;
 }
 
+@media (max-width: 767px) {
+  .profile-page .info .box > div .toggle-switch {
+    margin: auto;
+  }
+}
+
+.profile-page .data {
+  flex-wrap: wrap;
+}
+
+.profile-page .data .skills {
+  flex-grow: 1;
+}
+
 .profile-page .skills ul li {
   padding: 15px 0;
 }
@@ -1129,7 +1147,51 @@ textarea {
   display: inline-flex;
 }
 
+.profile-page .data .activities {
+  flex-grow: 2;
+}
+
+
+.profile-page .data .activities .activity:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-page .data .activities .activity img {
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .profile-page .data .activities .activity .date {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-page .data .activities {
+    margin-top: 0;
+  }
+
+  .profile-page .data .activities .activity {
+    flex-direction: column;
+  }
+
+  .profile-page .data .activities .activity img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .profile-page .data .activities .activity .date {
+    margin-top: 15px;
+  }
+}
+
 /* End Profile Page */
+
 
 
 /* Start Animation */
